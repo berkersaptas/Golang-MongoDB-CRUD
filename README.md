@@ -1,4 +1,4 @@
-### Golang Mongodb CRUD operation
+# Golang Mongodb CRUD operation
 
 In this project, I aimed to experiment and learn.
 
@@ -13,7 +13,7 @@ User information transmitted to the server as json in the project is transmitted
 ## Postman install
 We need to install an application that can make http requests. For this, it can be used in CURL via terminal, but I preferred Postman.[postman official install document](https://learning.postman.com/docs/getting-started/installation-and-updates/)
 
-# For the DB connection, we should create a function as follows.
+### For the DB connection, we should create a function as follows.
 
 We can make the mongo db connection with the standard community version installed as follows.
 
@@ -35,11 +35,20 @@ func db() *mongo.Client {
 ```
 
 
-# I created the following type of collection and document on mongodb.
+### I created the following type of collection and document on mongodb.
  ```sh
  humansCollection = db().Database("Animals").Collection("Human")
  ```
 
-# CRUD operation
+### CRUD operation
 
-Create , Read , Update and Delete functions in the 
+Create , Read , Read Spesific user , Update and Delete functions in the [https://github.com/yokartiklebron/Golang-MongoDB-CRUD/blob/main/main.go](https://github.com/yokartiklebron/Golang-MongoDB-CRUD/blob/main/main.go)
+
+
+### Contribute and Issue
+
+I would appreciate it if you create an [https://github.com/yokartiklebron/Golang-MongoDB-CRUD/issues](issues) record to contribute and correct errors.
+
+### Contact
+
+if you want to contact me berkersaptas " @ " gmail.com
