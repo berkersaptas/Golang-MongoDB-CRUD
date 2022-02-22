@@ -44,6 +44,14 @@ func db() *mongo.Client {
 
 Create , Read , Read Spesific user , Update and Delete functions in the [https://github.com/yokartiklebron/Golang-MongoDB-CRUD/blob/main/main.go](https://github.com/yokartiklebron/Golang-MongoDB-CRUD/blob/main/main.go)
 
+### Http Request
+
+Used the Echo library for the project to handle Http requests.
+
+You can find the patterns of the requests you will make in the [https://github.com/yokartiklebron/Golang-MongoDB-CRUD/blob/main/MongoDB-CRUD.postman_collection.json](postman model) I shared.
+
+You can upload this file to postman (2.1) and make a request.
+
 
 ### Contribute and Issue
 
