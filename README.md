@@ -8,11 +8,12 @@ User information transmitted to the server as json in the project is transmitted
 [First install, let's follow the official document for mongodb installation](https://docs.mongodb.com/manual/installation/)
 
 ## Golang install
-[Secound install is go lang](https://go.dev/doc/install)
+[Second install, is go lang](https://go.dev/doc/install)
 
-## Postman install
+## Http request
 We need to install an application that can make http requests. For this, it can be used in CURL via terminal, but I preferred Postman.[postman official install document](https://learning.postman.com/docs/getting-started/installation-and-updates/)
 
+## Operation
 ### For the DB connection, we should create a function as follows.
 
 We can make the mongo db connection with the standard community version installed as follows.
@@ -35,7 +36,7 @@ func db() *mongo.Client {
 ```
 
 
-### I created the following type of collection and document on mongodb.
+### Created the following type of collection and document on mongodb.
  ```sh
  humansCollection = db().Database("Animals").Collection("Human")
  ```
