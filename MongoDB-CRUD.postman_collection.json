@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "3ee573a1-9ecd-40a4-a062-c2d5771eaafa",
+		"name": "MongoDB-CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adduser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"no\": \"9\",\r\n    \"name\": \"name\",\r\n    \"surname\": \"surname\",\r\n    \"gender\": \"gender\",\r\n    \"age\": \"age\",\r\n    \"active\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:1323/adduser",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1323",
+					"path": [
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readspesificuser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:1323/readspesificuser?no=4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1323",
+					"path": [
+						"readspesificuser"
+					],
+					"query": [
+						{
+							"key": "no",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readusers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:1323/readusers",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1323",
+					"path": [
+						"readusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateuser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"surname\": \"surname\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:1323/updateuser?no=4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1323",
+					"path": [
+						"updateuser"
+					],
+					"query": [
+						{
+							"key": "no",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteuser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:1323/deleteuser?no=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "1323",
+					"path": [
+						"deleteuser"
+					],
+					"query": [
+						{
+							"key": "no",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
